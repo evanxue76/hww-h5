@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="no-store, width=device-width, initial-scale= 1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="<%= BASE_URL %>logo.png">
+    <title>ECG心电测量记录</title>
+    <style type="text/css">
+  	html,body{
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+		}
+		#app{
+			height: 100%;
+		}
+		.home{
+			height: 100%;
+		}
+  </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but huaw-project doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      let winWidth = document.documentElement.clientWidth || document.body.clientWidth
+  　　// 750这个数字是根据你的设计图的实际大小来的，所以值具体根据设计图的大小
+      let bodyRoot = document.getElementsByTagName('html')[0]
+      if (winWidth > 750) {
+        winWidth = 750
+      }
+      bodyRoot.style.fontSize = winWidth/10 + 'px'
+     
+    </script>
+    <script src="http://appdl.hicloud.com/dl/appdl/hms/jssdk/hmssdk1.0.2.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="https://appdl.hicloud.com/dl/appdl/hms/jssdk/hmssdk1.0.2.js" type="text/javascript" charset="utf-8"></script>-->
+  </body>
+</html>
